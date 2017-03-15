@@ -1,0 +1,44 @@
+html {
+    font-family: 'Slabo 27px', serif;
+    color: #38343A;
+}
+
+a {
+    color: #BA3E2C;
+}
+
+a:visited {
+    color: #BA3E2C;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Lato', sans-serif;
+    color: #171414;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    background-color: #FFFAFA;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 8px;
+    border-top: solid 1px #EEECEE;
+    border-bottom: solid 1px #EEEDEE;
+}
+
+address span {
+    display: block;
+}
+
+dl dt {
+    font-weight: bold;
+}
+
+dl dd {
+    margin: 0 0 10px 0;
+}
+ul {
+    margin: 0;
+}
