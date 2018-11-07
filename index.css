@@ -1,36 +1,72 @@
 html {
-    font-family: 'Slabo 27px', serif;
-    color: #38343A;
+    font-family: 'Heebo', sans-serif;
+    font-weight: 400;
+    color: #383838;
+    font-size: 17px;
+    line-height: 26px;
+}
+
+@media (min-width: 480px)  {
+  html {
+    font-size: 19px;
+    line-height: 28px;
+  }
+}
+
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 10px 0 10px;
 }
 
 a {
-    color: #BA3E2C;
+  color: #383838;
 }
 
 a:visited {
-    color: #BA3E2C;
+  color: #77477;
+}
+
+a:hover {
+  color: #898989;
+}
+
+img {
+  width: 220px;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 480px)  {
+  img {
+    width:240px;
+  }
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Lato', sans-serif;
-    color: #171414;
-    margin: 0;
-    padding: 0;
+    color: #171717;
+}
+
+h1, h2 {
+  font-weight: 300;
 }
 
 h1 {
-    font-family: 'Slabo 27px', serif;
-    margin: 15px 0 20px 0;
+  font-size: 2.5rem;
+  line-height: 4rem;
 }
 
 h2 {
-    background-color: #FFFAFA;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    padding-top: 5px;
-    padding-bottom: 8px;
-    border-top: solid 1px #EEECEE;
-    border-bottom: solid 1px #EEEDEE;
+  font-size: 2rem;
+  line-height: 2.2rem;
+}
+
+
+h3, h4 {
+  font-weight: 500;
+}
+
+address {
+  font-style: normal;
 }
 
 address span {
@@ -38,12 +74,26 @@ address span {
 }
 
 dl dt {
-    font-weight: bold;
+    font-weight: 500;
 }
 
 dl dd {
-    margin: 0 0 10px 0;
+    margin: 0 0 1rem 0;
 }
-ul {
+
+dd ul {
     margin: 0;
+    list-style-type: none;
+    padding-left: 0.9rem;
+    text-indent: -0.9rem;
+}
+
+dd li::before {
+    content: '– ';
+}
+
+small, address {
+  font-weight: 300;
+  color: #777877;
+  white-space: nowrap;
 }
