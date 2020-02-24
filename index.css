@@ -2,14 +2,14 @@ html {
   font-family: 'Heebo', sans-serif;
   font-weight: 400;
   color: #383838;
-  font-size: 19px;
-  line-height: 30px;
+  font-size: 17px;
+  line-height: 28px;
 }
 
 @media (min-width: 480px) {
   html {
     font-size: 19px;
-    line-height: 28px;
+    line-height: 30px;
   }
 }
 
@@ -71,6 +71,12 @@ h4 {
   font-weight: 500;
 }
 
+@media (max-width: 479px) {
+  h3 small {
+    display: block;
+  }
+}
+
 address {
   font-style: normal;
 }
@@ -107,4 +113,14 @@ address {
 small {
   color: #777877;
   font-size: 0.8em;
+}
+
+@media print {
+  header,
+  #technical-skills,
+  #professional-experience,
+  .page-break-after {
+    page-break-after: always;
+    break-after: always;
+  }
 }
